@@ -44,10 +44,26 @@ public class Game extends JFrame {
             public void keyPressed(KeyEvent e) {
                 input = e.getKeyChar();
                 switch (input) {
-                    case 'w' : position.move(position.x, position.y-1); break;
-                    case 'a' : position.move(position.x-1, position.y); break;
-                    case 's' : position.move(position.x, position.y+1); break;
-                    case 'd' : position.move(position.x+1, position.y); break;
+                    case 'w' :
+                        if(position.y > 0) {
+                            position.move(position.x, position.y-1);
+                        }
+                        break;
+                    case 'a' :
+                        if(position.x > 0) {
+                            position.move(position.x-1, position.y);
+                        }
+                         break;
+                    case 's' :
+                        if(position.y < height) {
+                            position.move(position.x, position.y+1);
+                        }
+                         break;
+                    case 'd' :
+                        if(position.x < width) {
+                            position.move(position.x+1, position.y);
+                        }
+                         break;
                 }
             }
         });
