@@ -1,14 +1,14 @@
-#What is it about
+# What is it about
 
 In this game you control a funny character in a square. Don't go out of bounds because the game will crash.
 
-##Controls
+## Controls
 
 W,A,S,D for movement
 
 C to exit the game
 
-#How to run
+# How to run
 
 Run from git bash or other unix terminal
 
