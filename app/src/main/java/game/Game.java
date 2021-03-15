@@ -34,7 +34,7 @@ public class Game extends JFrame {
             grid[i] = row;
         }
 
-        this.setSize(250, 250);
+        this.setSize(50, 50);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setVisible(true);
 
